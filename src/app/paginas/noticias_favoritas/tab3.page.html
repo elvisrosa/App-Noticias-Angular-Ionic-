@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="heart" class="rojo">  </ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" mode="ios" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">Agregado a favoritos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item *ngIf="articulos.length==0">
+    <ion-label>No has agregado nada a favoritos </ion-label>
+  </ion-item>
+
+  
+  <app-articulos [articulos]="articulos"></app-articulos>
+
+
+  <!--<app-explore-container name="Tab 3 page"></app-explore-container>-->
+</ion-content>
